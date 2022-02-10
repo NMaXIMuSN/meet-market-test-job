@@ -17,10 +17,13 @@
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/vuetify": "^1.12.1",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.2",
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0"
