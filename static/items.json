@@ -2,41 +2,57 @@
   {
     "id": 1,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
-    "price": "13 566 руб.",
+    "price": 13566,
     "size": [41, 42, 43],
     "company": "Nike",
     "image": "4123234152.png",
     "info": [
-      { "bacgraund-color": "#84A2FC", "text": "Новинка", "text-color": "#FEFEFE" },
-      { "bacgraund-color": "#E1F5C7", "text": "96% рекомендуют", "text-color": "#7CD010" }
+      {
+        "bacgraund-color": "#84A2FC",
+        "text": "Новинка",
+        "text-color": "#FEFEFE"
+      },
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
     ]
   },
   {
     "id": 2,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
-    "price": "7 323 руб.",
+    "price": 7323,
     "size": [41, 42],
     "company": "Nike",
     "image": "image96.png",
     "info": [
-      { "bacgraund-color": "#EA7373", "text": "Экспресс-доставка", "text-color": "#FEFEFE" }
+      {
+        "bacgraund-color": "#EA7373",
+        "text": "Экспресс-доставка",
+        "text-color": "#FEFEFE"
+      }
     ]
   },
   {
     "id": 3,
     "model": "Nike AJ I 1 Retro High 'Tie Dye'",
-    "price": "22 420 руб.",
+    "price": 22420,
     "size": [41, 42, 43, 44],
     "company": "Nike",
     "image": "image3.png",
     "info": [
-      { "bacgraund-color": "#E1F5C7", "text": "96% рекомендуют", "text-color": "#7CD010" }
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
     ]
   },
   {
     "id": 4,
     "model": "Nike Off White Air VaporMax Flyknit White",
-    "price": "13 566 руб.",
+    "price": 13566,
     "size": [41, 42, 43, 44],
     "company": "Nike",
     "image": "image2433.png"
@@ -44,12 +60,235 @@
   {
     "id": 5,
     "model": "SE Arctic Punch (2021)",
-    "price": "17 550 руб.",
+    "price": 17550,
     "size": [41, 42, 43, 44],
     "company": "Nike",
     "image": "image323453.png",
     "info": [
-      { "bacgraund-color": "#E1F5C7", "text": "96% рекомендуют", "text-color": "#7CD010" }
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 13566,
+    "size": [41, 42, 43],
+    "company": "Nike",
+    "image": "4123234152.png",
+    "info": [
+      {
+        "bacgraund-color": "#84A2FC",
+        "text": "Новинка",
+        "text-color": "#FEFEFE"
+      },
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 7323,
+    "size": [41, 42],
+    "company": "Nike",
+    "image": "image96.png",
+    "info": [
+      {
+        "bacgraund-color": "#EA7373",
+        "text": "Экспресс-доставка",
+        "text-color": "#FEFEFE"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "price": 22420,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image3.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "model": "Nike Off White Air VaporMax Flyknit White",
+    "price": 13566,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image2433.png"
+  },
+  {
+    "id": 10,
+    "model": "SE Arctic Punch (2021)",
+    "price": 17550,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image323453.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 13566,
+    "size": [41, 42, 43],
+    "company": "Nike",
+    "image": "4123234152.png",
+    "info": [
+      {
+        "bacgraund-color": "#84A2FC",
+        "text": "Новинка",
+        "text-color": "#FEFEFE"
+      },
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 7323,
+    "size": [41, 42],
+    "company": "Nike",
+    "image": "image96.png",
+    "info": [
+      {
+        "bacgraund-color": "#EA7373",
+        "text": "Экспресс-доставка",
+        "text-color": "#FEFEFE"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "price": 22420,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image3.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "model": "Nike Off White Air VaporMax Flyknit White",
+    "price": 13566,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image2433.png"
+  },
+  {
+    "id": 15,
+    "model": "SE Arctic Punch (2021)",
+    "price": 17550,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image323453.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 13566,
+    "size": [41, 42, 43],
+    "company": "Nike",
+    "image": "4123234152.png",
+    "info": [
+      {
+        "bacgraund-color": "#84A2FC",
+        "text": "Новинка",
+        "text-color": "#FEFEFE"
+      },
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "price": 7323,
+    "size": [41, 42],
+    "company": "Nike",
+    "image": "image96.png",
+    "info": [
+      {
+        "bacgraund-color": "#EA7373",
+        "text": "Экспресс-доставка",
+        "text-color": "#FEFEFE"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "price": 22420,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image3.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "model": "Nike Off White Air VaporMax Flyknit White",
+    "price": 13566,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image2433.png"
+  },
+  {
+    "id": 20,
+    "model": "SE Arctic Punch (2021)",
+    "price": 17550,
+    "size": [41, 42, 43, 44],
+    "company": "Nike",
+    "image": "image323453.png",
+    "info": [
+      {
+        "bacgraund-color": "#E1F5C7",
+        "text": "96% рекомендуют",
+        "text-color": "#7CD010"
+      }
     ]
   }
 ]

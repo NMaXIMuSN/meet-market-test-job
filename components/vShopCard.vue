@@ -1,9 +1,9 @@
 <template>
-  <v-card max-width="285px" class="card">
+  <v-card width="285px" class="card">
     <v-img class="card__img" :src="require(`~/assets/${item.image}`)" />
     <v-img class="card__like" :src="require(`~/assets/like-icon.svg`)" />
     <div class="card-info">
-      <div class="card__price">{{ item.price }}</div>
+      <div class="card__price">{{ formatPrice }}</div>
       <div class="card__model">{{ item.model }}</div>
       <div class="card__block-wrapper">
         <template v-for="info in item.info">
@@ -29,6 +29,12 @@ export default {
     item: {
       type: Object,
       require: true,
+    },
+  },
+
+  computed: {
+    formatPrice() {
+      return `${new Intl.NumberFormat('ru-RU').format(this.item.price)} руб.`
     },
   },
 }
