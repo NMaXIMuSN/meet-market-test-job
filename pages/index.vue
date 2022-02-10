@@ -3,3 +3,12 @@
     clear
   </v-row>
 </template>
+
+
+<script>
+export default {
+  mounted(){
+    this.$store.dispatch("shopItems/featchShopItems")
+  }
+}
+</script>
