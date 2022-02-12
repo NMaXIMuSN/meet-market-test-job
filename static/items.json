@@ -2,6 +2,7 @@
   {
     "id": 1,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43],
     "company": "Nike",
@@ -22,6 +23,7 @@
   {
     "id": 2,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 7323,
     "size": [41, 42],
     "company": "Nike",
@@ -37,6 +39,7 @@
   {
     "id": 3,
     "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "brand": "Air Jordan",
     "price": 22420,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -52,6 +55,7 @@
   {
     "id": 4,
     "model": "Nike Off White Air VaporMax Flyknit White",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -60,6 +64,7 @@
   {
     "id": 5,
     "model": "SE Arctic Punch (2021)",
+    "brand": "Air Jordan",
     "price": 17550,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -75,6 +80,7 @@
   {
     "id": 6,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43],
     "company": "Nike",
@@ -95,6 +101,7 @@
   {
     "id": 7,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 7323,
     "size": [41, 42],
     "company": "Nike",
@@ -110,6 +117,7 @@
   {
     "id": 8,
     "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "brand": "Air Jordan",
     "price": 22420,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -125,6 +133,7 @@
   {
     "id": 9,
     "model": "Nike Off White Air VaporMax Flyknit White",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -133,6 +142,7 @@
   {
     "id": 10,
     "model": "SE Arctic Punch (2021)",
+    "brand": "Air Jordan",
     "price": 17550,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -148,6 +158,7 @@
   {
     "id": 11,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43],
     "company": "Nike",
@@ -168,6 +179,7 @@
   {
     "id": 12,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 7323,
     "size": [41, 42],
     "company": "Nike",
@@ -183,6 +195,7 @@
   {
     "id": 13,
     "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "brand": "Air Jordan",
     "price": 22420,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -198,6 +211,7 @@
   {
     "id": 14,
     "model": "Nike Off White Air VaporMax Flyknit White",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -206,6 +220,7 @@
   {
     "id": 15,
     "model": "SE Arctic Punch (2021)",
+    "brand": "Air Jordan",
     "price": 17550,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -221,6 +236,7 @@
   {
     "id": 16,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43],
     "company": "Nike",
@@ -241,6 +257,7 @@
   {
     "id": 17,
     "model": "Yeezy Boost 350 V2 Ash Pearl",
+    "brand": "Nike",
     "price": 7323,
     "size": [41, 42],
     "company": "Nike",
@@ -256,6 +273,7 @@
   {
     "id": 18,
     "model": "Nike AJ I 1 Retro High 'Tie Dye'",
+    "brand": "Nike",
     "price": 22420,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -271,6 +289,7 @@
   {
     "id": 19,
     "model": "Nike Off White Air VaporMax Flyknit White",
+    "brand": "Air Jordan",
     "price": 13566,
     "size": [41, 42, 43, 44],
     "company": "Nike",
@@ -279,6 +298,7 @@
   {
     "id": 20,
     "model": "SE Arctic Punch (2021)",
+    "brand": "Air Jordan",
     "price": 17550,
     "size": [41, 42, 43, 44],
     "company": "Nike",

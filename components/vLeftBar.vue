@@ -1,5 +1,6 @@
 <template>
-  <v-row>
+  <v-col>
+    <h2 class="compilation__title">Подборки Meet-market</h2>
     <div class="compilation-wrapper">
       <div
         class="compilation"
@@ -11,7 +12,7 @@
         {{ link.text }}
       </div>
     </div>
-  </v-row>
+  </v-col>
 </template>
 
 <script>
@@ -29,12 +30,14 @@ export default {
       { text: 'Подборка Dark', to: 'dark' },
     ],
   }),
-  methods:{
-    clikLink(link){
+  methods: {
+    clikLink(link) {
       this.$route.params.segment2 = link.to
-      this.$router.push(`/catalog/${this.$route.params.segment}/${link.to}/${this.$route.params.segment3}`)
-    }
-  }
+      this.$router.push(
+        `/catalog/${this.$route.params.segment}/${link.to}/${this.$route.params.segment3}`
+      )
+    },
+  },
 }
 </script>
 
@@ -42,20 +45,25 @@ export default {
 .compilation {
   color: $font-color;
   font-size: 21px;
+  display: inline-block;
   line-height: 25px;
   font-family: $text-family;
   font-weight: 400;
   margin-bottom: 28px;
   cursor: pointer;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   &-hot {
     font-weight: 600;
     color: #f4900c;
     font-size: 21px;
     position: relative;
     line-height: 25px;
-    &::after{
+    &::after {
       position: absolute;
-      content: "";
+      content: '';
       right: 0;
       top: 50%;
       transform: translate(100%, -50%);
@@ -63,6 +71,15 @@ export default {
       height: 22px;
       background-image: url('~/assets/img/hot-img.svg');
     }
+  }
+
+  &__title {
+    font-family: $text-family;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    margin-bottom: 28px;
+    color: $font-color-grey;
   }
 }
 </style>

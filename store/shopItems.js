@@ -29,5 +29,6 @@ export const actions = {
   },
 }
 export const getters = {
-    getShopItems:(state) => state.shopItems
+    getShopItems:(state) => state.shopItems,
+    getCountShopItems:(state) => state.shopItems.length,
 }
