@@ -1,5 +1,5 @@
 <template>
-  <v-col>
+  <v-col class="bar">
     <h2 class="compilation__title">Подборки Meet-market</h2>
     <ul class="compilation-wrapper">
       <li
@@ -37,7 +37,9 @@ export default {
     clikLink(link) {
       this.$route.params.segment2 = link.to
       this.$router.push(
-        `/catalog/${this.$route.params.segment}/${link.to}/${this.$route.params.segment3}`
+        `/catalog/${this.$route.params.segment}/${link.to}${
+          this.$route.params.segment3 ? '/' + this.$route.params.segment3 : ''
+        }`
       )
     },
   },
@@ -45,6 +47,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.bar{
+  padding: 0 !important;
+}
 .compilation {
   color: $font-color;
   font-size: 21px;

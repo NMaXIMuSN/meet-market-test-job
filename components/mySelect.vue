@@ -6,9 +6,16 @@
     v-model="menu"
   >
     <template v-slot:activator="{ on, attrs }">
-      <v-btn class="select__title" v-bind="attrs" v-on="on" :disabled="disable">
+      <v-btn
+        :class="{ 'select__title-dark': dark }"
+        class="select__title"
+        v-bind="attrs"
+        v-on="on"
+        :disabled="disable"
+      >
         <span>{{ title }} {{ count }}</span>
-        <img src="~/assets/img/arrow-down.svg" alt="" />
+        <img v-if="!dark" src="~/assets/img/arrow-down.svg" alt="" />
+        <img v-else src="~/assets/img/arrow-down-white.svg" alt="" />
       </v-btn>
     </template>
     <slot name="card" ref="asdf"></slot>
@@ -26,6 +33,10 @@ export default {
       type: String,
     },
     disable: {
+      type: Boolean,
+      default: false,
+    },
+    dark: {
       type: Boolean,
       default: false,
     },
@@ -63,6 +74,10 @@ export default {
     text-transform: none;
     letter-spacing: 0;
     font-family: $text-family;
+    &-dark {
+      background-color: $btn-select-color !important;
+      color: $btn-select-text-color !important;
+    }
     &:disabled {
       background-color: $bg-select !important;
       img {

@@ -1,8 +1,8 @@
 <template>
   <v-row style="gap: 12px">
-    <my-select title="По популярности">
+    <my-select :title="$store.getters['filters/getCurrenSort']" dark>
       <template #card>
-        <card-brands></card-brands>
+        <card-sort></card-sort>
       </template>
     </my-select>
     <my-select title="Бренд" nameCount="Brand">

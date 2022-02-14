@@ -1,4 +1,13 @@
 export const state = () => ({
+  sort: [
+    'По популярности',
+    'По цене(мин)',
+    'По цене(макс)',
+    'По названию(А-Я)',
+    'По названию(Я-А)',
+  ],
+  currenSort: 'По популярности',
+
   brands: [
     'Air Jordan',
     'Nike',
@@ -29,6 +38,9 @@ export const state = () => ({
 })
 
 export const mutations = {
+  setCurretnSort(state, sort) {
+    state.currenSort = sort
+  },
   setCurretnBrands(state, brand) {
     state.currenBrands = brand
   },
@@ -44,6 +56,9 @@ export const mutations = {
 }
 export const actions = {}
 export const getters = {
+  getSort: (state) => state.sort,
+  getCurrenSort: (state) => state.currenSort,
+
   getBrands: (state) => state.brands,
   countBrand: (state) => state.currenBrands.length,
   getCurrenBrands: (state) => state.currenBrands,
@@ -52,12 +67,17 @@ export const getters = {
   countSize: (state) => state.currenSizes.length,
   getCurrenSize: (state) => state.currenSizes,
 
-  countPrice: (state) => state.currentRadioPrice ? 1 : 0,
+  countPrice: (state) => (state.currentRadioPrice ? 1 : 0),
   getRadioPrice: (state) => state.price,
 
-  countSex: (state) => state.currenSex ? 1 : 0,
+  countSex: (state) => (state.currenSex ? 1 : 0),
   getRadioSex: (state) => state.sex,
 
-  getFullFilters: (state) => [...state.currenBrands, state.currentRadioPrice, ...state.currenSizes, state.currenSex, state.currenModel]
-
+  getFullFilters: (state) => [
+    ...state.currenBrands,
+    state.currentRadioPrice,
+    ...state.currenSizes,
+    state.currenSex,
+    state.currenModel,
+  ],
 }

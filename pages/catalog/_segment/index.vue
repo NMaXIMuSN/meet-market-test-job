@@ -1,15 +1,17 @@
 <template>
   <v-row>
-    <v-col cols="12"
-      ><h1 class="catalog__title">
+    <v-col cols="12">
+      <h1 class="catalog__title">
         Кросовки: Новинки
         <span
           >{{ this.$store.getters['shopItems/getCountShopItems'] }} товара</span
         >
-      </h1></v-col
-    >
+      </h1>
+    </v-col>
     <v-row justify="space-between">
-      <v-col cols="4" lg="3"><v-left-bar></v-left-bar></v-col>
+      <v-col cols="4" lg="3" style="padding: 0 !important">
+        <v-left-bar></v-left-bar>
+      </v-col>
       <v-col cols="8" lg="9">
         <v-col cols="12" class="d-flex catalog__filters">
           <v-filters-selects></v-filters-selects>
