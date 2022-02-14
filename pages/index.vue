@@ -1,19 +1,9 @@
 <template>
   <v-row>
-    <my-select title="Бренд">
+    <my-select title="Стоимость">
       <template #card>
-        <card-brands></card-brands>
-      </template>
-    </my-select>
-    <my-select title="Бренд">
-      <template #card>
-        <card-brands></card-brands>
-      </template>
-    </my-select>
-    <my-select title="Бренд">
-      <template #card>
-        <card-brands></card-brands>
-      </template>
+        <card-price></card-price>
+      </template> 
     </my-select>
   </v-row>
 </template>

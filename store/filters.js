@@ -8,18 +8,38 @@ export const state = () => ({
     'Louis Vuitton',
   ],
   currenBrands: [],
-  currenModel: null,
+
   model: null,
-  price: null,
+  currenModel: null,
+
+  price: [
+    'Товары со скидкой',
+    'До 3000 руб.',
+    'До 5000 руб.',
+    'До 9000 руб.',
+    'До 15000 руб.',
+  ],
+  currentRadioPrice: null,
+
   sizes: [38, 39, 40, 41, 42, 43, 44],
   currenSizes: [],
-  sex: ['мужские', 'женские'],
-  currenSex: [],
+
+  sex: ['Мужские', 'Женские'],
+  currenSex: null,
 })
 
 export const mutations = {
   setCurretnBrands(state, brand) {
     state.currenBrands = brand
+  },
+  setCurretnSize(state, size) {
+    state.currenSizes = size
+  },
+  setRadioSex(state, sex) {
+    state.currenSex = sex
+  },
+  setRadioPrice(state, price) {
+    state.currentRadioPrice = price
   },
 }
 export const actions = {}
@@ -27,4 +47,17 @@ export const getters = {
   getBrands: (state) => state.brands,
   countBrand: (state) => state.currenBrands.length,
   getCurrenBrands: (state) => state.currenBrands,
+
+  getSize: (state) => state.sizes,
+  countSize: (state) => state.currenSizes.length,
+  getCurrenSize: (state) => state.currenSizes,
+
+  countPrice: (state) => state.currentRadioPrice ? 1 : 0,
+  getRadioPrice: (state) => state.price,
+
+  countSex: (state) => state.currenSex ? 1 : 0,
+  getRadioSex: (state) => state.sex,
+
+  getFullFilters: (state) => [...state.currenBrands, state.currentRadioPrice, ...state.currenSizes, state.currenSex, state.currenModel]
+
 }

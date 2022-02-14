@@ -1,12 +1,17 @@
 <template>
-  <v-menu offset-y :close-on-content-click="false" v-model="menu">
+  <v-menu
+    offset-y
+    :close-on-content-click="false"
+    :disabled="disable"
+    v-model="menu"
+  >
     <template v-slot:activator="{ on, attrs }">
-      <v-btn class="select__title" v-bind="attrs" v-on="on">
-        <span>{{ title }} ({{$store.getters["filters/countBrand"]}})</span>
+      <v-btn class="select__title" v-bind="attrs" v-on="on" :disabled="disable">
+        <span>{{ title }} {{ count }}</span>
         <img src="~/assets/img/arrow-down.svg" alt="" />
       </v-btn>
     </template>
-    <slot name="card" @closeMenu="menu = false"></slot>
+    <slot name="card" ref="asdf"></slot>
   </v-menu>
 </template>
 
@@ -17,10 +22,27 @@ export default {
       type: String,
       require: true,
     },
+    nameCount: {
+      type: String,
+    },
+    disable: {
+      type: Boolean,
+      default: false,
+    },
   },
   data: () => ({
     menu: false,
-  })
+  }),
+  computed: {
+    count() {
+      return this.$store.getters[`filters/count${this.nameCount}`]
+        ? `(${this.$store.getters[`filters/count${this.nameCount}`]})`
+        : ``
+    },
+  },
+  mounted() {
+    console.log(this.$refs['asdf'])
+  },
 }
 </script>
 
@@ -28,6 +50,7 @@ export default {
 .select {
   &__title {
     width: 190px;
+    height: auto !important;
     display: flex;
     box-shadow: none !important;
     justify-content: space-between;
@@ -37,7 +60,15 @@ export default {
     color: $font-color;
     font-size: 14px;
     line-height: 17px;
+    text-transform: none;
+    letter-spacing: 0;
     font-family: $text-family;
+    &:disabled {
+      background-color: $bg-select !important;
+      img {
+        opacity: 0.3;
+      }
+    }
   }
 }
 </style>

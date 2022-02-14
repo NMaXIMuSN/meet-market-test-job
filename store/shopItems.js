@@ -29,6 +29,10 @@ export const actions = {
   },
 }
 export const getters = {
-    getShopItems:(state) => state.shopItems,
-    getCountShopItems:(state) => state.shopItems.length,
+  getShopItems: (state) => state.shopItems,
+  getCountShopItems: (state) => state.shopItems.length,
+  getMaxPrice: (state) =>
+    state.shopItems.reduce((max, item) => {
+      return max > item ? max : item
+    }, -1).price,
 }

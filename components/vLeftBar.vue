@@ -1,8 +1,8 @@
 <template>
   <v-col>
     <h2 class="compilation__title">Подборки Meet-market</h2>
-    <div class="compilation-wrapper">
-      <div
+    <ul class="compilation-wrapper">
+      <li
         class="compilation"
         :class="{ 'compilation-hot': link.hot }"
         v-for="(link, i) in links"
@@ -10,8 +10,11 @@
         @click="clikLink(link)"
       >
         {{ link.text }}
-      </div>
-    </div>
+        <span v-if="link.hot" class="compilation-hot-img"
+          ><img src="~/assets/img/hot-img.svg" alt=""
+        /></span>
+      </li>
+    </ul>
   </v-col>
 </template>
 
@@ -45,7 +48,8 @@ export default {
 .compilation {
   color: $font-color;
   font-size: 21px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   line-height: 25px;
   font-family: $text-family;
   font-weight: 400;
@@ -53,6 +57,8 @@ export default {
   cursor: pointer;
   &-wrapper {
     display: flex;
+    list-style: none;
+    padding-left: 0;
     flex-direction: column;
   }
   &-hot {
@@ -61,15 +67,10 @@ export default {
     font-size: 21px;
     position: relative;
     line-height: 25px;
-    &::after {
-      position: absolute;
-      content: '';
-      right: 0;
-      top: 50%;
-      transform: translate(100%, -50%);
-      width: 22px;
-      height: 22px;
-      background-image: url('~/assets/img/hot-img.svg');
+    &-img {
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
     }
   }
 

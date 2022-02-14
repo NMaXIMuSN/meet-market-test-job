@@ -8,17 +8,25 @@
         >
       </h1></v-col
     >
-    <v-row>
-      <v-col cols="3"><v-left-bar></v-left-bar></v-col>
-      <v-col cols="9">
-        <v-row>
-          <v-col
+    <v-row justify="space-between">
+      <v-col cols="4" lg="3"><v-left-bar></v-left-bar></v-col>
+      <v-col cols="8" lg="9">
+        <v-col cols="12" class="d-flex catalog__filters">
+          <v-filters-selects></v-filters-selects>
+        </v-col>
+        <v-col cols="12" class="d-flex catalog__filters">
+          <curren-filters></curren-filters>
+        </v-col>
+        <v-row style="gap: 20px">
+          <div
             class="catalog__card"
             v-for="card in this.$store.getters['shopItems/getShopItems']"
             :key="card.id"
           >
-            <v-shop-card :item="card"></v-shop-card> </v-col></v-row
-      ></v-col>
+            <v-shop-card :item="card"></v-shop-card>
+          </div>
+        </v-row>
+      </v-col>
     </v-row>
   </v-row>
 </template>
@@ -27,7 +35,6 @@
 export default {
   mounted() {
     this.$store.dispatch('shopItems/featchShopItems')
-    // console.log(this.$route);
   },
 }
 </script>
@@ -51,6 +58,13 @@ export default {
   }
   &__card {
     width: 285px;
+  }
+
+  &__filters {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin-bottom: 32px;
   }
 }
 </style>

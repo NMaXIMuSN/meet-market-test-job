@@ -5,3 +5,34 @@ $font-color-grey: rgba(29, 29, 32, 0.3);
 $color-variable: #4ea5d9;
 $bg-select: #f3f3f3;
 $text-family: 'SamsungSans';
+$bg-color: #84a2fc;
+
+.v-slider__thumb {
+  width: 22px !important;
+  height: 22px !important;
+  background: #fefefe !important;
+  border: 2px solid #84a2fc !important;
+  &::before {
+    display: none;
+  }
+  &::after {
+    display: none;
+  }
+}
+
+.v-item--active .v-input--selection-controls__input i {
+  color: $bg-color !important;
+  caret-color: $bg-color !important;
+  &::before {
+    content: '';
+    border-radius: 50%;
+    border: 7px solid;
+    background-color: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
